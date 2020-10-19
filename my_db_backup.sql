@@ -22,13 +22,19 @@
 DROP TABLE IF EXISTS `NEW_TABLE`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `NEW_TABLE` (
-  `id` bigint NOT NULL AUTO_INCREMENT,
-  `theme` varchar(45) DEFAULT NULL,
-  `title` varchar(45) DEFAULT NULL,
-  `description` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id_UNIQUE` (`id`)
+CREATE TABLE `NEW_TABLE`
+(
+  `id` bigint NOT NULL,
+  `theme` varchar
+(20) DEFAULT NULL,
+  `title` varchar
+(20) DEFAULT NULL,
+  `description` varchar
+(20) DEFAULT NULL,
+  PRIMARY KEY
+(`id`),
+  UNIQUE KEY `id_UNIQUE`
+(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -38,7 +44,19 @@ CREATE TABLE `NEW_TABLE` (
 
 LOCK TABLES `NEW_TABLE` WRITE;
 /*!40000 ALTER TABLE `NEW_TABLE` DISABLE KEYS */;
-INSERT INTO `NEW_TABLE` VALUES (1,'dark','TITLE 1','DESCRIPTION 1'),(2,'light','TITLE 2','DESCRIPTION 2'),(3,'dark','TITLE 3','DESCRIPTION 3'),(4,'light','TITLE 4','DESCRIPTION 4'),(5,'dark','TITLE 5','DESCRIPTION 5'),(6,'light','TITLE 6','DESCRIPTION 6'),(7,'dark','TITLE 7','DESCRIPTION 7'),(8,'light','TITLE 8','DESCRIPTION 8'),(9,'dark','TITLE 9','DESCRIPTION 9'),(10,'light','TITLE 10','DESCRIPTION 10');
+INSERT INTO `
+NEW_TABLE`
+VALUES
+  (1, 'dark', 'TITLE 1', 'DESCRIPTION 1'),
+  (2, 'light', 'TITLE 2', 'DESCRIPTION 2'),
+  (3, 'dark', 'TITLE 3', 'DESCRIPTION 3'),
+  (4, 'light', 'TITLE 4', 'DESCRIPTION 4'),
+  (5, 'dark', 'TITLE 5', 'DESCRIPTION 5'),
+  (6, 'light', 'TITLE 6', 'DESCRIPTION 6'),
+  (7, 'dark', 'TITLE 7', 'DESCRIPTION 7'),
+  (8, 'light', 'TITLE 8', 'DESCRIPTION 8'),
+  (9, 'dark', 'TITLE 9', 'DESCRIPTION 9'),
+  (10, 'light', 'TITLE 10', 'DESCRIPTION 10');
 /*!40000 ALTER TABLE `NEW_TABLE` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
