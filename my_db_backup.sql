@@ -24,13 +24,13 @@ DROP TABLE IF EXISTS `NEW_TABLE`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `NEW_TABLE`
 (
-  `id` bigint NOT NULL,
+  `id` bigint NOT NULL AUTO_INCREMENT,
   `theme` varchar
-(20) DEFAULT NULL,
+(45) DEFAULT NULL,
   `title` varchar
-(20) DEFAULT NULL,
+(45) DEFAULT NULL,
   `description` varchar
-(20) DEFAULT NULL,
+(45) DEFAULT NULL,
   PRIMARY KEY
 (`id`),
   UNIQUE KEY `id_UNIQUE`
